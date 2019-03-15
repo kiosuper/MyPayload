@@ -1,5 +1,5 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
-<xsl:value-of select="php:function('file_get_contents','index.php')"/>
+<xsl:value-of select="document(file)"/>
 </xsl:template>
 </xsl:stylesheet>
